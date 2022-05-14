@@ -1,0 +1,48 @@
+<html>
+	<style>
+       body {
+background-image: url('image/th.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+}
+fieldset{
+    display: inline-block;
+}
+div.abd{
+	border: 2px solid black;
+}
+</style>
+<body>
+<fieldset>
+	<h2>
+<legend align="center">Enter Your Feedback</legend><br>
+First Name: <input type="text" name="firstname" required><br><br>
+Last Name: <input type="text" name="lastname" required><br><br>
+Email-Id: <input type="email" name=id required><br><br>
+Contact Number: <input type="number" name="contactnumber"><br><br>
+Loaction: 
+<select>
+<option> Auckland</option>
+<option> Welington</option>
+<option> Hamilton</option>
+<option> Tauranga</option>
+</select><br><br>
+Enter Your Feedback Here:<br><br>
+<textarea cols=40 rows=6 placeholder="very good site"></textarea><br><br>
+<button type="button" onclick="myfunction()">Submit</button>
+</h2>
+</fieldset>
+
+	<div class="abd"><marquee behavior="scroll" direction="right" ><img src="image/nz.png" style="width:250px;height:200px"><img src="image/n1.jpg"style="width:250px;height:200px"><img src="image/n2.jpg" style="width:250px;height:200px"><img src="image/n3.jpg" style="width:250px;height:200px"><img src="image/]n4.jpg" style="width:250px;height:200px"><img src="image/n5.jpg" style="width:250px;height:200px"><img src="image/n6.jpg" style="width:250px;height:200px"><img src="image/n7.jpg" style="width:250px;height:200px"><img src="image/th.jpg" style="width:250px;height:200px"><img src="image/7.jpg" style="width:250px;height:200px">
+	</marquee></div>
+
+
+<script>
+function myfunction()
+{
+alert('form has been submitted');
+}
+</script>
+</fieldset>
+</body>
+</html>

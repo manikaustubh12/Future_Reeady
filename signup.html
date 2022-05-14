@@ -1,0 +1,81 @@
+<html>
+<head>
+     <link rel="stylesheet" href="form-register.css">
+    <style>
+       body {
+background-image: url('image/journey.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+}
+</style>
+<link rel="stylesheet" href="form-register.css">
+    </head>
+    <body>
+    <div class="main-content">
+
+        <form class="form-register" method="post" action="login1.html">
+
+            <div class="form1">
+
+                <div class="form-white-background">
+
+                    <div class="form-title-row">
+                        <h1>Create an account</h1>
+                    </div>
+
+                    <div class="form-row">
+                        <label>
+                            <span>Name</span>
+                            <input type="text" name="name" required>
+                        </label>
+                    </div>
+                     
+                     <div class="form-row">
+                        <label>
+                            <span>Mobile Number</span>
+                            <input type="text" name="name" pattern="[0-9]{10}"  /> 
+                        </label>
+                    </div>
+
+                    <div class="form-row">
+                        <label>
+                            <span>Gender</span>
+                           <select>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                     </select>
+                        </label>
+                    </div>
+                    <div class="form-row">
+                        <label>
+                            <span>Email</span>
+                            <input type="email" name="email" required>
+                        </label>
+                    </div>
+
+                    <div class="form-row">
+                        <label>
+                            <span>Password</span>
+                            <input type="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+                        </label>
+                    </div>
+
+                    <div class="form-row">
+                        <label class="form-checkbox">
+                            <input type="checkbox" name="checkbox" checked>
+                            <span>I agree to the <a href="https://www.termsfeed.com/blog/sample-terms-and-conditions-template/">terms and conditions</a></span>
+                        </label>
+                    </div>
+
+                    <div class="form-row">
+                        <button type="submit">Register</button>
+                    </div><br>
+                    
+                  <a href="login1.html" class="form-log-in-with-existing">Already have an account? Login here &rarr;</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
